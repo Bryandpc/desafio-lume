@@ -1,0 +1,92 @@
+.container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.cabecalho {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cabecalho button {
+  width: auto;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+}
+
+.titulo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primaria);
+  margin: 0;
+}
+
+.filtroContainer {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.selectFiltro {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--cor-borda-secundaria);
+  border-radius: 0.375rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  background-color: var(--branco);
+  cursor: pointer;
+  min-width: 120px;
+  font-weight: 500;
+  color: var(--texto-primario);
+}
+
+.selectFiltro:focus {
+  outline: none;
+  border-color: var(--primaria);
+  box-shadow: 0 0 0 3px rgba(2, 60, 107, 0.1);
+}
+
+.selectFiltro:disabled {
+  background-color: var(--fundo-secundario);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.inputFiltro {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--cor-borda-secundaria);
+  border-radius: 0.375rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.inputFiltro:focus {
+  outline: none;
+  border-color: var(--primaria);
+  box-shadow: 0 0 0 3px rgba(2, 60, 107, 0.1);
+}
+
+.inputFiltro:disabled {
+  background-color: var(--fundo-secundario);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.inputFiltro::placeholder {
+  color: var(--texto-desabilitado);
+}
+
+.filtroContainer button {
+  width: auto;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}

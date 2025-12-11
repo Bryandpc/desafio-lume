@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --lume-azul: #023C6B;
+  --lume-cinza: #666666;
+  
+  --primaria: #023C6B;
+  --primaria-escura: #034a85;
+  --secundaria: #666666;
+  --secundaria-escura: #555555;
+  --erro: #e74c3c;
+  --erro-escura: #c0392b;
+  --sucesso: #27ae60;
+  --sucesso-escura: #229954;
+  --aviso: #f39c12;
+  --perigo: #dc3545;
+  --perigo-escura: #c82333;
+  
+  --texto-primario: #2c3e50;
+  --texto-secundario: #34495e;
+  --texto-terciario: #95a5a6;
+  --texto-desabilitado: #999999;
+  
+  --fundo-primario: #ffffff;
+  --fundo-secundario: #f8f9fa;
+  --fundo-desabilitado: #e0e0e0;
+  
+  --cor-borda: #dfe6e9;
+  --cor-borda-secundaria: #dddddd;
+  
+  --branco: #ffffff;
+  
+  --transicao-tema: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  background: var(--fundo-secundario);
+  color: var(--texto-primario);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: var(--transicao-tema);
+}

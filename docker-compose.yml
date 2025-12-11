@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  api:
+    container_name: desafio-lume-api
+    build: ./backend-lume
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:h2:mem:desafiolume;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+      SPRING_DATASOURCE_USERNAME: sa
+      SPRING_DATASOURCE_PASSWORD: ""
+
+      SECURITY_JWT_SECRET_KEY: "wjY5F!vrXBzmJS4I%D9zdftkUs0N@YsfYCtPk30dwN!eO8mQtGjr*YKgIsEp0&%J"
+      SECURITY_JWT_EXPIRATION: 300000      
+      SECURITY_JWT_REFRESH_EXPIRATION: 600000 
+
+      SPRING_JPA_SHOW_SQL: "false"
+
+    restart: unless-stopped
+
+  web:
+    container_name: desafio-lume-web
+    build: ./frontend-lume
+    ports:
+      - "3000:80" 
+    depends_on:
+      - api
+    environment:
+      REACT_APP_API_URL: "http://api:8080"

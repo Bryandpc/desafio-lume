@@ -1,0 +1,10 @@
+.wrapperContainer {
+  display: flex;
+  min-height: 100vh;
+  background: var(--fundo-secundario);
+}
+
+.contentContainer {
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}

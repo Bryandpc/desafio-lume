@@ -1,0 +1,192 @@
+.containerTabela {
+  background: var(--branco);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.containerTabela.carregando {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.cabecalhoTabela {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: var(--fundo-primario);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.infoPaginacao {
+  font-size: 0.9rem;
+  color: var(--texto-secundario);
+  font-weight: 500;
+}
+
+.controlesPaginacao {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.numeroPagina {
+  font-size: 0.9rem;
+  color: var(--texto-secundario);
+  font-weight: 500;
+}
+
+.botaoNavegacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: var(--primaria);
+  color: var(--branco);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1.1rem;
+}
+
+.botaoNavegacao:hover:not(:disabled) {
+  background: var(--primaria-escura);
+  transform: translateY(-1px);
+}
+
+.botaoNavegacao:disabled {
+  background: var(--fundo-desabilitado);
+  color: var(--texto-desabilitado);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.divisorFiltro {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  margin: 0;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.tabela thead {
+  background: var(--fundo-secundario);
+}
+
+.tabela thead tr {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.cabecalhoColuna,
+.cabecalhoAcao {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--texto-primario);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+.celulaAcao {
+  width: 120px;
+  text-align: center;
+}
+
+.cabecalhoAcao {
+  text-align: center;
+  padding: 1rem;
+}
+
+.acoesContainer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabela tbody tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+.tabela tbody tr:hover {
+  background-color: var(--fundo-secundario);
+}
+
+.celulaColuna {
+  padding: 1rem 1.5rem;
+  color: var(--texto-primario);
+  vertical-align: middle;
+}
+
+.botaoAcao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: var(--primaria);
+  color: var(--branco);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.botaoAcao:hover {
+  background: var(--primaria-escura);
+  transform: scale(1.05);
+}
+
+.botaoAcao:active {
+  transform: scale(0.95);
+}
+
+.botaoDeletar {
+  background: var(--perigo);
+}
+
+.botaoDeletar:hover {
+  background: var(--perigo-escura);
+}
+
+.estadoVazioContainer {
+  padding: 3rem 2rem;
+}
+
+.estadoVazio {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.iconeEstadoVazio {
+  font-size: 4rem;
+  color: var(--texto-secundario);
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.mensagemEstadoVazio {
+  font-size: 1.1rem;
+  color: var(--texto-secundario);
+  margin: 0;
+}
+
+.semDados {
+  padding: 0;
+  text-align: center;
+}
+
+.espacadorInferior {
+  height: 1rem;
+}
+
