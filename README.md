@@ -17,3 +17,7 @@ Na raiz do projeto (onde está o arquivo `docker-compose.yml`), execute:
 
 ```bash
 docker compose up --build
+
+Usuário padrão para acessar o projeto:
+admin
+pass
